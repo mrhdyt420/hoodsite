@@ -12,7 +12,18 @@
   /* Gaya CSS untuk layar dengan lebar maksimum 768px */
 }
 
-
+@media screen and (max-width: 480px) {
+  /* Gaya CSS untuk layar smartphone */
+  .ascii-text {
+    font-size: 9px; /* Ukuran font ASCII art untuk layar smartphone */
+  }
+  
+  /* Atur margin dan perataan agar sesuai dengan layar smartphone */
+  h1, h2, h3 {
+    text-align: center;
+    margin: 10px;
+  }
+}
 html { background: url('/home/mrhxxx/Dokumen/my-project/dark-hole/gambar/999.png') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 
 body { font-family: 'Lucida Sans', Helvetica, Verdana, Arial; sans-serif; font-size: 100%; -moz-user-select:none; -webkit-user-select:none; user-select:none; }
@@ -71,16 +82,13 @@ h1{
             margin: 0;
           
         }
-        @media screen and (max-width: 768px) {
-  .ascii-text {
-    font-size: 20px;
-  }
-}
+      
+
 
         .ascii-text {
             white-space: pre;
             font-family: monospace;
-            font-size: 25px;
+            font-size: 9px;
             animation: blink 1s linear infinite;
             color: black; /* Warna teks */
         }
