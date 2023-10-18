@@ -1,0 +1,96 @@
+<html><head>
+  <title>Form Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('6.gif'); 
+      background-size: cover; /* Mengatur gambar latar belakang agar menutupi seluruh halaman */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    form {
+      background: rgba(255, 255, 255, 0.4); /* Menentukan latar belakang transparan */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      padding: 20px;
+      max-width: 80%;
+      width: 300px;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    input[type="submit"] {
+      background: #000000ba;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+     /* CSS media query untuk layar kecil (misalnya, ponsel) */
+    @media (max-width: 600px) {
+      form {
+        width: 70%; /* Mengisi lebar layar penuh */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <form action="index.html" method="POST">
+    <fieldset>
+      <legend>Form Login</legend>
+      <p>
+        <label>Username:</label>
+        <input type="text" name="username" placeholder="your ex:email@.com">
+      </p>
+      <p>
+        <label>Password:</label>
+        <input type="password" name="password" placeholder="your password">
+      </p>
+      <p>
+      <label>Don't have an account?</lable>
+        <label>Access options:</label>
+        <select name="akses">
+          <option selected="">--choose your option to get access--</option>
+          <option value="admin">premium</option>
+          <option value="user">gold</option>
+          <option value="boss">silver</option>
+        </select>
+      </p>
+      <p>
+        <input type="submit" name="submit" value="Sign in">
+      </p>
+      
+    </fieldset>
+  </form>
+
+
+
+
+</body></html>
+
